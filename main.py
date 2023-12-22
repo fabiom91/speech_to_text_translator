@@ -2,6 +2,12 @@ import speech_recognition as sr
 from deep_translator import GoogleTranslator
 import pygame
 
+######################################################
+# PYGAME Implementation
+# from https://stackoverflow.com/a/42015712/9944937
+# Thank you Ted Klein Bergman for your answer
+######################################################
+
 def blit_text(surface, text, pos, font, color=pygame.Color('black')):
     words = [word.split(' ') for word in text.splitlines()]  # 2D array where each row is a list of words.
     space = font.size(' ')[0]  # The width of a space.
